@@ -54,18 +54,20 @@ export default function HeroFlats({
             />
           )}
           <div
-            class={`mx-6 lg:mx-auto lg:w-full space-y-4 gap-4 ${
+            class={`mx-12 lg:mx-auto  space-y-4 gap-4 ${
               image
                 ? "lg:w-1/2 lg:max-w-xl"
-                : "flex flex-col items-center justify-center lg:max-w-3xl"
+                : "flex flex-col items-center justify-center "
             }`}
           >
             <div
-              class="font-medium inline-block leading-[100%] lg:text-[90px] text-4xl tracking-[-2.4px]"
+              class="font-medium inline-block leading-[100%] lg:text-[90px] text-4xl tracking-[-2.4px] 
+              overflow-hidden animate-typing whitespace-nowrap border-r-4 "
               dangerouslySetInnerHTML={{
                 __html: title,
               }}
             >
+              
             </div>
             <p class="leading-[150%] md:text-md text-lg">
               {description}

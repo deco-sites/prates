@@ -7,21 +7,14 @@
     },
     {
       "__resolveType": "site/sections/Hero.tsx",
-      "title": "<p>Click here to tweak this text however you want.</p>",
-      "description": "This text is entirely editable, tailor it freely."
+      "title": "<p>Welcome to my site!</p>",
+      "description": "About me and my path through web development."
     },
     {
-      "__resolveType": "site/sections/MainPost.tsx",
-      "post": {
-        "__resolveType": "blog/loaders/BlogPostItem.ts",
-        "slug": "why-we-web"
-      }
-    },
-    {
-      "__resolveType": "site/sections/BlogPosts.tsx",
-      "posts": {
-        "__resolveType": "blog/loaders/BlogpostList.ts",
-        "count": 6
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ImageWithParagraph.tsx",
+        "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/12367/9e9d54a2-e8ee-4f2e-92da-946a14bbb770"
       }
     },
     {

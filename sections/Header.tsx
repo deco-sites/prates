@@ -12,8 +12,7 @@ export interface CTA {
 
 export interface Nav {
   logo?: {
-    src?: ImageWidget;
-    alt?: string;
+    text?: string
   };
   navigation?: {
     links: {
@@ -47,11 +46,7 @@ const lineStyles = [
 ];
 
 export default function Haader({
-  logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/1527/67120bcd-936a-4ea5-a760-02ed5c4a3d04",
-    alt: "Logo",
-  },
+  logo = {text:"Prates"},
   navigation = {
     links: [
       { label: "Home", url: "/" },
@@ -69,7 +64,7 @@ export default function Haader({
     <nav class="container mx-auto lg:px-0 px-4">
       <div class="flex gap-8 items-center justify-between py-4">
         <a href="/">
-          <Image src={logo.src || ""} width={100} height={28} alt={logo.alt} />
+          <h1 class={"text-3xl font-bold hover:text-secondary transition-all duration-200"}>{logo.text}</h1>
         </a>
 
         <label
@@ -120,7 +115,7 @@ export default function Haader({
                 <a
                   href={link.url}
                   aria-label={link.label}
-                  class="link no-underline hover:underline p-4"
+                  class="link no-underline hover:underline p-4 hover:text-secondary transition-all duration-200"
                 >
                   {link.label}
                 </a>
